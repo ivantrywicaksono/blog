@@ -7,21 +7,54 @@ Color Palette: #251D3A #2A2550 #E04D01 #FF7700 - Color Hunt */
 /* Coffee
 #D7B19D #C68B59 #865439 #402218*/
 :root {
-    font-size: 16px;
+    font-size: 14px;
     --bg-color: #D7B19D;
     --text-color: #402218;
 }
 
 * {
     color: var(--text-color);
-    /*margin: 0;*/
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 body {
+    margin: 0;
+    padding: 0;
     background-color: var(--bg-color);
-    font-family: "Helvetica", sans-serif;
+    font-family: Monospace, sans-serif;
+}
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-ul.links > li {
-    display: inline;
-    text-decoration: none;
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+    padding: 10px;
+    box-shadow: 0px 5px 10px 5px rgb(142,148,151);
+}
+
+.round-border {
+    border-radius: 50%;
+}
+
+.profil-siswa img {
+    max-width: 100px;
+}
+
+.sub-list {
+    padding: 0 0 0 1em;
+}
+@media screen and (max-width: 600px) {
+    .profil-siswa {
+        width: fit-content;
+        margin: 0 auto 0;
+        text-align: center;
+    }
 }
