@@ -1,0 +1,13 @@
+:root {
+  --main-bg-color: rgb(18, 18, 18);
+  --main-text-color: rgb(240, 240, 240);
+  font-size: 12pt;
+}
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+.card {
+  background-color: rgb(41, 28, 13);
+  padding: 20px;
+}
