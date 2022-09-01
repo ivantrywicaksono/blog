@@ -1,11 +1,7 @@
 const blogs = [
   {
-    title: "Etika Profesi",
-    body: [
-      "Etika profesi adalah", 
-      "bla bla",
-      "test tset"
-    ]
+    title: null,
+    body: null
   }
 ];
 

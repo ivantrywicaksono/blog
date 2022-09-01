@@ -3,11 +3,25 @@
   --main-text-color: rgb(240, 240, 240);
   font-size: 12pt;
 }
-body {
-  background-color: var(--main-bg-color);
+
+* {
   color: var(--main-text-color);
 }
+body {
+  margin: 0px;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.foreign-word {
+  font-style: italic;
+}
+
 .card {
-  background-color: rgb(41, 28, 13);
   padding: 20px;
+}
+
+.blog__title {
+  text-align: center;
 }
