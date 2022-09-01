@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   body.forEach(element => {
     const p = document.createElement("p");
-    p.innerText = element;
+    p.innerHTML = element;
   
     root.append(p)
   });
