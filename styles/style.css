@@ -5,15 +5,35 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: var(--main-text-color);
 }
+
 body {
-  margin: 0px;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   font-family: 'Courier New', Courier, monospace;
 }
 
+h2, h3 {
+  margin-top: 18px;
+  margin-bottom: 6px;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+}
+ul {
+  margin-inline-start: 20px;
+  list-style: disc;
+}
 .foreign-word {
   font-style: italic;
 }
