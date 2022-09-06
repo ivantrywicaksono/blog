@@ -14,25 +14,33 @@
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2, h3 {
-  margin-top: 18px;
-  margin-bottom: 6px;
-  margin-inline-start: 5px;
-  margin-inline-end: 5px;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  margin-inline-start: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
 
 p {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  margin-inline-start: 5px;
-  margin-inline-end: 5px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-inline-start: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
-ul {
-  margin-inline-start: 20px;
-  list-style: disc;
+
+aside {
+  margin-top: 1.2rem;
+}
+ul li {
+  margin-top: 0.3rem;
+  margin-inline-start: 1.45rem;
+}
+ol li {
+  margin-top: 0.3rem;
+  margin-inline-start: 2.5rem;
 }
 .foreign-word {
   font-style: italic;
