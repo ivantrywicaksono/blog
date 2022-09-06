@@ -34,11 +34,15 @@ p {
 aside {
   margin-top: 1.2rem;
 }
-ul li {
+ul li, dt, dd {
   margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
   margin-inline-start: 1.45rem;
 }
-ol li {
+dt {
+  margin-top: 0.8rem;
+}
+footer {
   margin-top: 0.3rem;
   margin-inline-start: 2.5rem;
 }
