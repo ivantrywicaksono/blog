@@ -34,13 +34,17 @@ p {
 aside {
   margin-top: 1.2rem;
 }
-ul li, dt, dd {
+ul li{
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
   margin-inline-start: 1.45rem;
 }
 dt {
   margin-top: 0.8rem;
+}
+
+dl {
+  margin-inline-start: 0.59rem;
 }
 footer {
   margin-top: 0.3rem;
