@@ -14,7 +14,10 @@
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
+  margin: 1vh 5vw 0;
+  
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
 }
 
 h2, h3 {
@@ -25,22 +28,38 @@ h2, h3 {
 }
 
 p {
+  text-indent: 2rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   margin-inline-start: 0.5rem;
   margin-inline-end: 0.5rem;
+  line-height: 1.3rem;
 }
 
 aside {
   margin-top: 1.2rem;
 }
+
 ul li{
   margin-top: 0.3rem;
   margin-bottom: 0.3rem;
   margin-inline-start: 1.45rem;
 }
+
+ol li {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  margin-inline-start: 2rem;
+}
 dt {
   margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+dd {
+  text-indent: 2rem;
+  line-height: 1.3rem;
 }
 
 dl {
