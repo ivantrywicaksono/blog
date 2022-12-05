@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../../styles/blog.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Forensic | Ivan's Blog</title>
+</head>
+<body>
+  <main>
+    <div id="content">
+      <header class="blog__title">
+        <h1>IT Forensic</h1>
+        <img src="/assets/images/800px-Mobiles.jpg" alt="" class="flex crop" style="object-position: 0 25%;">
+        <p>
+          Halo, kembali lagi denganku. Pada kesempatan kali ini aku akan membagikan wawasanku mengenai IT Forensic yang aku dapatkan setelah menghadiri kelas dengan mata kuliah "Etika Profesi" di <a href="https://unej.ac.id" target="_blank" rel="noreferrer">Universitas Jember</a>.
+        </p>
+      </header>
+
+      <article>
+        <h2>Forensik Komputer</h2>
+        <p>
+          Sebelum mengetahui pengertian forensik komputer, apa sih forensik itu? forensik secara umum dapat diartikan sebagai suatu proses ilmiah dalam mengumpulkan, menganalisa, dan menghadirkan berbagai bukti dalam sidang pengadilan terkait adanya suatu kasus hukum.
+        </p>
+        <p>
+          Lalu, pengertian forensik komputer adalah suatu proses mengidentifikasi, menganalisa, dan menggunakan bukti digital menurut hukum yang berlaku. Istilah ini meluas menjadi Forensik Teknologi Informasi.
+        </p>
+      </article>
+      <article>
+        <h2>Forensik Teknologi Informasi</h2>
+        <p>
+          Forensik teknologi informasi adalah mengumpulkan dan analisa data dari sumber daya komputer. Forensik ini adalah perpaduan antara ilmu hukum dan ilmu komputer. Sumber daya komputer yang bisa dipakai dalam forensik adalah sebagai berikut:
+        </p>
+        <ol>
+          <li>Sistem komputer</li>
+          <li>Jaringan komputer</li>
+          <li>Jalur komunikasi</li>
+          <li>Media penyimpanan</li>
+          <li>Aplikasi komputer</li>
+        </ol>
+
+        <section>
+          <h3>Tujuan</h3>
+          <ul>
+            <li>Mendapatkan fakta-fakta yang objektif dari sebuah insiden/pelanggaran keamanan sistem informasi.</li>
+            <li>Fakta-fakta tersebut setelah diverifikasi akan menjadi bukti-bukti (evidence) yang akan digunakan dalam proses hukum.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Komponen</h3>
+          <ol>
+            <li>Manusia</li>
+            <li>Perangkat</li>
+            <li>Aturan</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Konsep</h3>
+          <section>
+            <h4>1. Identifikasi</h4>
+            <p>
+              Pada tahap ini proses penyelidikan dimulai dari identifikasi dimana bukti itu berada, dimana bukti itu disimpan, dan bagaimana penyimpanannya untuk mempermudah penyelidikan. 
+            </p>
+            <p>
+              Penelusuran identifikasi bisa dilakukan untuk sekadar mencari "ada informasi apa disini?" sampai pertanyaan yang rinci seperti "apa urutan peristiwa yang menyebabkan terjadinya situasi terkini?".
+            </p>
+            <p>
+              Pada proses ini, tools-tools yang dapat mendukung kinerja adalah:
+            </p>
+            <ul>
+              <li>Forensic Acquisition Utilities</li>
+              <li>Ftimes</li>
+              <li>ProDiscover DFT</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>2. Penyimpanan</h4>
+            <p>
+              Tahapan ini mencakup penyimpanan dan penyiapan bukti-bukti yang ada, termasuk melindungi bukti-bukti dari kerusakan, perubahan dan penghilangan oleh pihak-pihak tertentu. Karena bukti digital bersifat sementara (volatile), mudah rusak, berubah dan hilang, maka pengetahuan yang mendalam dari seorang ahli digital forensik mutlak diperlukan. Kesalahan kecil pada penanganan bukti digital dapat membuat barang bukti digital tidak diakui di pengadilan. Bahkan menghidupkan dan mematikan komputer dengan tidak hati-hati bisa saja merusak/merubah barang bukti tersebut.
+            </p>
+            <p>
+              Aturan utama pada tahap ini adalah penyelidikan tidak boleh dilakukan langsung pada bukti asli karena dikhawatirkan akan dapat merubah isi dan struktur yang ada didalamnya. Dilakukan copy data secara Bitstream Image dari bukti asli ke media lainnya. Bitstream image adalah metode penyimpanan digital dengan mengkopi setiap bit demi bit dari data orisinil, termasuk file yang tersembunyi, file temporer, file yang terdefrag, dan file yang belum tertimpa. Setiap biner digit demi digit di-copy secara utuh dalam media baru. Teknik ini umumnya diistilahkan dengan cloning atau imaging. Data hasil cloning inilah yang selanjutnya menjadi objek penelitian dan penyelidikan.
+            </p>
+          </section>
+
+          <section>
+            <h4>3. Analisa Bukti Digital</h4>
+            <p>
+              Tahapan ini dilaksanakan dengan melakukan analisa secara mendalam terhadap bukti-bukti yang ada. Bukti yang telah didapatkan perlu di-explore kembali ke dalam sejumlah skenario yang berhubungan dengan tindak pengusutan, seperti:
+            </p>
+            <ol>
+              <li>Siapa yang telah melakukan</li>
+              <li>Apa yang telah dilakukan</li>
+              <li>Apa saja software yang digunakan</li>
+              <li>Hasil proses apa yang dihasilkan</li>
+              <li>Waktu melakukan</li>
+            </ol>
+            
+            <p>
+              Tahapan analisis terbagi dua, yaitu analisis media (media analysis) dan analisis aplikasi (application analysis) pada barang bukti yang ada. Beberapa tools analisis media yang bisa digunakan antara lain:
+            </p>
+            <ul>
+              <li>TestDisk</li>
+              <li>Explore2fs</li>
+              <li>ProDiscover DFT</li>
+            </ul>
+            <p>
+              Sedangkan untuk analisis aplikasi, beberapa tools yang bisa digunakan seperti:
+            </p>
+            <ul>
+              <li>Event Log Parser</li>
+              <li>Galleta</li>
+              <li>Md5deep</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>4. Presentasi</h4>
+            <p>
+              Presentasi dilakukan dengan menyajikan dan menguraikan secara detail laporan penyelidikan dengan bukti-bukti yang sudah dianalisa secara mendalam dan dapat dipertanggung jawabkan secara hukum di pengadilan. Laporan yang disajikan harus di cross-check langsung dengan saksi yang ada, baik saksi yang terlibat langsung maupun tidak langsung. Beberapa hal penting yang perlu dicantumkan pada saat presentasi/panyajian laporan ini, antara lain:
+            </p>
+            <ol>
+              <li>Tanggal dan waktu terjadinya pelanggaran</li>
+              <li>Tanggal dan waktu pada saat investigasi</li>
+              <li>Permasalahan yang terjadi</li>
+              <li>Masa berlaku analisa laporan</li>
+              <li>Penemuan bukti yang berharga (pada laporan akhir penemuan ini sangat ditekankan sebagai bukti penting proses penyidikan)</li>
+              <li>Teknik khusus yang digunakan, contoh: password cracker</li>
+              <li>Bantuan pihak lain (pihak ketiga)</li>
+            </ol>
+          </section>
+        </section>
+
+        <section>
+          <h3>Training dan Sertifikasi</h3>
+          <p>
+            Berikut ini merupakan beberapa contoh dari training dan sertifikasi forensik komputer:
+          </p>
+          <ul>
+            <li>CISSP (Certified Information System Security Professional)</li>
+            <li>ECFE (Experienced Computer Forensic Examiner)</li>
+            <li>CHFI (Computer Hacking Forensic Investigator)</li>
+            <li>CFA (Certified Forensics Analyst)</li>
+            <li>CCE (Certified Computer Examiner)</li>
+            <li>AIS (Advanced Information Security)</li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <aside class="flex">
+    <hr>
+    <h2>My University</h2>
+    <a href="https://unej.ac.id" target="_blank" rel="noreferrer">
+      <img class="unej" src="../../assets/images/unej.png" alt="Universitas Jember Logo">
+    </a>
+    <p>Get to know more about my university. <a href="https://unej.ac.id" target="_blank" rel="noreferrer">Universitas Jember</a></p>
+  </aside>
+</body>
+</html>
